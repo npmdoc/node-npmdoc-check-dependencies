@@ -1,0 +1,115 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/mgol/check-dependencies"
+
+    >check-dependencies (v1.0.1)</a>
+</h1>
+<h4>Checks if currently installed npm/bower dependencies are installed in the exact same versions that are specified in package.json/bower.json</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.check-dependencies">module check-dependencies</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.sync">
+            function <span class="apidocSignatureSpan">check-dependencies.</span>sync
+            <span class="apidocSignatureSpan">(cfg, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.check-dependencies" id="apidoc.module.check-dependencies">module check-dependencies</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.check-dependencies.sync" id="apidoc.element.check-dependencies.sync">
+        function <span class="apidocSignatureSpan">check-dependencies.</span>sync
+        <span class="apidocSignatureSpan">(cfg, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;sync&#x27;, cfg, cb)</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        /* handle output */
+    });
+```
+The promise should never fail.
+
+There is a synchronous alternative -- the following code:
+```js
+var output = require(&#x27;check-dependencies&#x27;).<span class="apidocCodeKeywordSpan">sync</span>(config);
+```
+will assign to `output` the same object that would otherwise be passed to the `callback` in the asynchronous scenario.
+
+The `config` object may have the following fields:
+
+#### packageManager
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>

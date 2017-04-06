@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"check-dependencies",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "check-dependencies",
+    "description": "api documentation for [check-dependencies (v1.0.1)](https://github.com/mgol/check-dependencies) [![npm package](https://img.shields.io/npm/v/npmdoc-check-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-check-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-check-dependencies.svg)](https://travis-ci.org/npmdoc/node-npmdoc-check-dependencies)",
     "devDependencies": {
         "check-dependencies": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-check-dependencies",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-check-dependencies",
+    "keywords": [
+        "documentation",
+        "check-dependencies"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_check_dependencies.js",
+    "name": "npmdoc-check-dependencies",
+    "nameAlias": "npmdoc_check_dependencies",
+    "nameOriginal": "npmdoc-check-dependencies",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-check-dependencies"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }

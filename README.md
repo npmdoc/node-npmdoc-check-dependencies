@@ -1,9 +1,14 @@
-# api documentation for  [check-dependencies (v1.0.1)](https://github.com/mgol/check-dependencies)  [![npm package](https://img.shields.io/npm/v/npmdoc-check-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-check-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-check-dependencies.svg)](https://travis-ci.org/npmdoc/node-npmdoc-check-dependencies)
+# npmdoc-check-dependencies
+
+#### api documentation for  [check-dependencies (v1.0.1)](https://github.com/mgol/check-dependencies)  [![npm package](https://img.shields.io/npm/v/npmdoc-check-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-check-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-check-dependencies.svg)](https://travis-ci.org/npmdoc/node-npmdoc-check-dependencies)
+
 #### Checks if currently installed npm/bower dependencies are installed in the exact same versions that are specified in package.json/bower.json
 
-[![NPM](https://nodei.co/npm/check-dependencies.png?downloads=true)](https://www.npmjs.com/package/check-dependencies)
+[![NPM](https://nodei.co/npm/check-dependencies.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/check-dependencies)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-check-dependencies_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-check-dependencies/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-check-dependencies/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Michał Gołębiowski",
-        "email": "m.goleb@gmail.com"
+        "name": "Michał Gołębiowski"
     },
     "bin": {
         "check-dependencies": "./bin/cli.js"
@@ -76,13 +80,11 @@
     "main": "./lib/check-dependencies.js",
     "maintainers": [
         {
-            "name": "m_gol",
-            "email": "m.goleb@gmail.com"
+            "name": "m_gol"
         }
     ],
     "name": "check-dependencies",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mgol/check-dependencies.git"
@@ -92,42 +94,6 @@
     },
     "version": "1.0.1"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module check-dependencies](#apidoc.module.check-dependencies)
-1.  [function <span class="apidocSignatureSpan">check-dependencies.</span>sync (cfg, cb)](#apidoc.element.check-dependencies.sync)
-
-
-
-# <a name="apidoc.module.check-dependencies"></a>[module check-dependencies](#apidoc.module.check-dependencies)
-
-#### <a name="apidoc.element.check-dependencies.sync"></a>[function <span class="apidocSignatureSpan">check-dependencies.</span>sync (cfg, cb)](#apidoc.element.check-dependencies.sync)
-- description and source-code
-```javascript
-(cfg, cb) => checkDependenciesHelper('sync', cfg, cb)
-```
-- example usage
-```shell
-...
-        /* handle output */
-    });
-'''
-The promise should never fail.
-
-There is a synchronous alternative -- the following code:
-'''js
-var output = require('check-dependencies').sync(config);
-'''
-will assign to 'output' the same object that would otherwise be passed to the 'callback' in the asynchronous scenario.
-
-The 'config' object may have the following fields:
-
-#### packageManager
-...
 ```
 
 

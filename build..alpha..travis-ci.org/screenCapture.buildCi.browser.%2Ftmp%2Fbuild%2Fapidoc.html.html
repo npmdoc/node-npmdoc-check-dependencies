@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/mgol/check-dependencies"
-
-    >check-dependencies (v1.0.1)</a>
+    <a href="https://github.com/mgol/check-dependencies">check-dependencies (v1.0.1)</a>
 </h1>
 <h4>Checks if currently installed npm/bower dependencies are installed in the exact same versions that are specified in package.json/bower.json</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.check-dependencies">module check-dependencies</a><ol>
 
@@ -138,7 +131,7 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;async&#x27;, cfg, cb)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&gt; checkDependenciesHelper('async', cfg, cb)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -151,7 +144,7 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;async&#x27;, cfg, cb)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&gt; checkDependenciesHelper('async', cfg, cb)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -164,7 +157,7 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;sync&#x27;, cfg, cb)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&gt; checkDependenciesHelper('sync', cfg, cb)</pre></li>
     <li>example usage<pre class="apidocCodePre">...
         /* handle output */
     });
@@ -173,7 +166,7 @@ The promise should never fail.
 
 There is a synchronous alternative -- the following code:
 ```js
-var output = require(&#x27;check-dependencies&#x27;).<span class="apidocCodeKeywordSpan">sync</span>(config);
+var output = require('check-dependencies').<span class="apidocCodeKeywordSpan">sync</span>(config);
 ```
 will assign to `output` the same object that would otherwise be passed to the `callback` in the asynchronous scenario.
 
@@ -212,7 +205,7 @@ The `config` object may have the following fields:
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;sync&#x27;, cfg, cb)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&gt; checkDependenciesHelper('sync', cfg, cb)</pre></li>
     <li>example usage<pre class="apidocCodePre">...
         /* handle output */
     });
@@ -221,7 +214,7 @@ The promise should never fail.
 
 There is a synchronous alternative -- the following code:
 ```js
-var output = require(&#x27;check-dependencies&#x27;).<span class="apidocCodeKeywordSpan">sync</span>(config);
+var output = require('check-dependencies').<span class="apidocCodeKeywordSpan">sync</span>(config);
 ```
 will assign to `output` the same object that would otherwise be passed to the `callback` in the asynchronous scenario.
 
@@ -258,3 +251,4 @@ The `config` object may have the following fields:
     ]
 </div>
 </div>
+</body></html>

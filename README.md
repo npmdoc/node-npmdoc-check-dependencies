@@ -1,6 +1,6 @@
 # npmdoc-check-dependencies
 
-#### api documentation for  [check-dependencies (v1.0.1)](https://github.com/mgol/check-dependencies)  [![npm package](https://img.shields.io/npm/v/npmdoc-check-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-check-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-check-dependencies.svg)](https://travis-ci.org/npmdoc/node-npmdoc-check-dependencies)
+#### basic api documentation for  [check-dependencies (v1.0.1)](https://github.com/mgol/check-dependencies)  [![npm package](https://img.shields.io/npm/v/npmdoc-check-dependencies.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-check-dependencies) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-check-dependencies.svg)](https://travis-ci.org/npmdoc/node-npmdoc-check-dependencies)
 
 #### Checks if currently installed npm/bower dependencies are installed in the exact same versions that are specified in package.json/bower.json
 

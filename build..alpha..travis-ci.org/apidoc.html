@@ -72,53 +72,9 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.check_dependencies">
-            function <span class="apidocSignatureSpan">check-dependencies.</span>check_dependencies
-            <span class="apidocSignatureSpan">(cfg, cb)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.sync">
             function <span class="apidocSignatureSpan">check-dependencies.</span>sync
             <span class="apidocSignatureSpan">(cfg, cb)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.toString">
-            function <span class="apidocSignatureSpan">check-dependencies.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.check-dependencies.sync">module check-dependencies.sync</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.sync.sync">
-            function <span class="apidocSignatureSpan">check-dependencies.</span>sync
-            <span class="apidocSignatureSpan">(cfg, cb)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.check-dependencies.toString">module check-dependencies.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.check-dependencies.toString.toString">
-            function <span class="apidocSignatureSpan">check-dependencies.</span>toString
-            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -134,19 +90,6 @@
     <h2>
         <a href="#apidoc.element.check-dependencies.check-dependencies" id="apidoc.element.check-dependencies.check-dependencies">
         function <span class="apidocSignatureSpan"></span>check-dependencies
-        <span class="apidocSignatureSpan">(cfg, cb)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;async&#x27;, cfg, cb)</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.check-dependencies.check_dependencies" id="apidoc.element.check-dependencies.check_dependencies">
-        function <span class="apidocSignatureSpan">check-dependencies.</span>check_dependencies
         <span class="apidocSignatureSpan">(cfg, cb)</span>
         </a>
     </h2>
@@ -181,72 +124,6 @@ The `config` object may have the following fields:
 
 #### packageManager
 ...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.check-dependencies.toString" id="apidoc.element.check-dependencies.toString">
-        function <span class="apidocSignatureSpan">check-dependencies.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.check-dependencies.sync" id="apidoc.module.check-dependencies.sync">module check-dependencies.sync</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.check-dependencies.sync.sync" id="apidoc.element.check-dependencies.sync.sync">
-        function <span class="apidocSignatureSpan">check-dependencies.</span>sync
-        <span class="apidocSignatureSpan">(cfg, cb)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">(cfg, cb) =&#x3e; checkDependenciesHelper(&#x27;sync&#x27;, cfg, cb)</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        /* handle output */
-    });
-```
-The promise should never fail.
-
-There is a synchronous alternative -- the following code:
-```js
-var output = require(&#x27;check-dependencies&#x27;).<span class="apidocCodeKeywordSpan">sync</span>(config);
-```
-will assign to `output` the same object that would otherwise be passed to the `callback` in the asynchronous scenario.
-
-The `config` object may have the following fields:
-
-#### packageManager
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.check-dependencies.toString" id="apidoc.module.check-dependencies.toString">module check-dependencies.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.check-dependencies.toString.toString" id="apidoc.element.check-dependencies.toString.toString">
-        function <span class="apidocSignatureSpan">check-dependencies.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
